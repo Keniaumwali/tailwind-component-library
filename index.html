@@ -12,16 +12,19 @@
 <body class="min-h-screen bg-gray-50 text-gray-900">
 
   <!-- Navigation -->
-  <header class="bg-white border-b border-gray-200">
-    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-green-700">
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-10">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-between items-center gap-4">
+      <a href="#home" class="text-xl font-bold text-green-700">
         Component Library
-      </h1>
+      </a>
 
-      <div class="flex gap-6 text-sm font-medium text-gray-600">
-        <a href="#home" class="hover:text-green-700">Home</a>
-        <a href="#components" class="hover:text-green-700">Components</a>
-        <a href="#about" class="hover:text-green-700">About</a>
+      <div class="flex flex-wrap gap-5 text-sm font-medium text-gray-600">
+        <a href="#home" class="hover:text-green-700 transition">Home</a>
+        <a href="#components" class="hover:text-green-700 transition">Components</a>
+        <a href="#buttons" class="hover:text-green-700 transition">Buttons</a>
+        <a href="#cards" class="hover:text-green-700 transition">Cards</a>
+        <a href="#alerts" class="hover:text-green-700 transition">Alerts</a>
+        <a href="#about" class="hover:text-green-700 transition">About</a>
       </div>
     </nav>
   </header>
@@ -29,143 +32,250 @@
   <main>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-green-800 text-white py-20 px-6">
+    <section id="home" class="bg-green-800 text-white py-24 px-6">
       <div class="max-w-4xl mx-auto text-center">
-        <p class="text-green-200 font-semibold mb-4">
+
+        <span class="inline-block bg-green-700 text-green-100 px-4 py-2 rounded-full text-sm font-semibold mb-6">
           OUR UI TOOLKIT
-        </p>
+        </span>
 
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Tailwind Component Library
-        </h2>
+        </h1>
 
-        <p class="text-lg text-green-100 max-w-2xl mx-auto mb-8">
+        <p class="text-lg md:text-xl text-green-100 max-w-2xl mx-auto mb-9 leading-relaxed">
           A collection of reusable interface components designed
-          to make building beautiful websites easier and faster.
+          to make building beautiful and consistent websites
+          easier and faster.
         </p>
 
         <a href="#components"
-           class="inline-block bg-white text-green-800 px-6 py-3 rounded-lg font-semibold hover:bg-green-100">
+           class="inline-block bg-white text-green-800 px-8 py-3 rounded-lg font-semibold hover:bg-green-100 transition">
           Explore Components
         </a>
+
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="max-w-7xl mx-auto px-6 -mt-8 relative">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 p-7 text-center">
+          <p class="text-4xl font-bold text-green-700">3</p>
+          <h2 class="font-semibold text-gray-900 mt-2">Button Styles</h2>
+          <p class="text-sm text-gray-500 mt-1">Primary, Secondary, Outline</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 p-7 text-center">
+          <p class="text-4xl font-bold text-blue-700">2</p>
+          <h2 class="font-semibold text-gray-900 mt-2">Card Examples</h2>
+          <p class="text-sm text-gray-500 mt-1">Profile and Product</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 p-7 text-center">
+          <p class="text-4xl font-bold text-yellow-600">4</p>
+          <h2 class="font-semibold text-gray-900 mt-2">Alert Types</h2>
+          <p class="text-sm text-gray-500 mt-1">Success, Warning, Error, Info</p>
+        </div>
+
       </div>
     </section>
 
     <!-- Component Overview -->
-    <section id="components" class="max-w-7xl mx-auto px-6 py-16">
+    <section id="components" class="max-w-7xl mx-auto px-6 py-20">
 
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-3">
+        <p class="text-sm font-bold uppercase tracking-widest text-green-700 mb-3">
+          Explore the library
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
           Our Components
         </h2>
 
-        <p class="text-gray-600">
-          Explore the reusable components available in our library.
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Discover reusable interface elements that help create
+          consistent and user-friendly web experiences.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        <!-- Buttons -->
-        <article class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-          <div class="w-12 h-12 bg-green-100 text-green-700 rounded-lg flex items-center justify-center text-xl font-bold mb-5">
+        <!-- Buttons Overview -->
+        <article class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition">
+          <div class="w-14 h-14 bg-green-100 text-green-700 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
             B
           </div>
 
           <h3 class="text-xl font-bold mb-3">Buttons</h3>
 
-          <p class="text-gray-600 mb-4">
-            Reusable buttons with different styles and interactive states.
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Interactive buttons with different styles, hover effects,
+            focus states and disabled states.
           </p>
 
           <a href="#buttons" class="font-semibold text-green-700 hover:underline">
-            View buttons →
+            Explore buttons →
           </a>
         </article>
 
-        <!-- Cards -->
-        <article class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center text-xl font-bold mb-5">
+        <!-- Cards Overview -->
+        <article class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition">
+          <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
             C
           </div>
 
           <h3 class="text-xl font-bold mb-3">Cards</h3>
 
-          <p class="text-gray-600 mb-4">
-            Flexible card layouts for displaying profiles and products.
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Flexible and reusable card layouts for displaying
+            user profiles and product information.
           </p>
 
           <a href="#cards" class="font-semibold text-green-700 hover:underline">
-            View cards →
+            Explore cards →
           </a>
         </article>
 
-        <!-- Alerts -->
-        <article class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-lg flex items-center justify-center text-xl font-bold mb-5">
+        <!-- Alerts Overview -->
+        <article class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition">
+          <div class="w-14 h-14 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
             A
           </div>
 
           <h3 class="text-xl font-bold mb-3">Alerts</h3>
 
-          <p class="text-gray-600 mb-4">
-            Informative messages for different situations and notifications.
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Informative messages that communicate success,
+            warnings, errors and general information.
           </p>
 
           <a href="#alerts" class="font-semibold text-green-700 hover:underline">
-            View alerts →
+            Explore alerts →
           </a>
         </article>
 
       </div>
     </section>
 
-    <!-- Component Sections: Integration Areas -->
-    <section class="bg-gray-100 px-6 py-16">
-      <div class="max-w-7xl mx-auto space-y-10">
+    <!-- Component Demonstrations -->
+    <section class="bg-gray-100 px-6 py-20">
+      <div class="max-w-7xl mx-auto">
 
-        <div id="buttons" class="bg-white p-8 rounded-xl border border-gray-200">
-          <h2 class="text-2xl font-bold mb-3">Button Components</h2>
+        <div class="text-center mb-12">
+          <p class="text-sm font-bold uppercase tracking-widest text-green-700 mb-3">
+            Component showcase
+          </p>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Component Examples
+          </h2>
+
           <p class="text-gray-600">
-            Our reusable button examples will appear here.
+            Each section will showcase reusable components created by our team.
           </p>
         </div>
 
-        <div id="cards" class="bg-white p-8 rounded-xl border border-gray-200">
-          <h2 class="text-2xl font-bold mb-3">Card Components</h2>
-          <p class="text-gray-600">
-            Our profile and product card examples will appear here.
-          </p>
-        </div>
+        <div class="space-y-8">
 
-        <div id="alerts" class="bg-white p-8 rounded-xl border border-gray-200">
-          <h2 class="text-2xl font-bold mb-3">Alert Components</h2>
-          <p class="text-gray-600">
-            Our success, warning, error and information alerts will appear here.
-          </p>
-        </div>
+          <!-- Buttons Integration Area -->
+          <section id="buttons" class="bg-white p-8 md:p-10 rounded-xl border border-gray-200 shadow-sm">
+            <div class="mb-6">
+              <span class="text-sm font-semibold text-green-700">01 / BUTTONS</span>
+              <h3 class="text-2xl font-bold mt-2">Button Components</h3>
+              <p class="text-gray-600 mt-2">
+                Primary, secondary and outline buttons with interactive states.
+              </p>
+            </div>
 
+            <!-- Emerance's button components will be integrated here -->
+            <div class="bg-gray-50 border border-dashed border-gray-300 rounded-lg p-8 text-center">
+              <p class="font-semibold text-gray-700">
+                Button components coming soon
+              </p>
+              <p class="text-sm text-gray-500 mt-2">
+                Integration area for Emerance's work.
+              </p>
+            </div>
+          </section>
+
+          <!-- Cards Integration Area -->
+          <section id="cards" class="bg-white p-8 md:p-10 rounded-xl border border-gray-200 shadow-sm">
+            <div class="mb-6">
+              <span class="text-sm font-semibold text-blue-700">02 / CARDS</span>
+              <h3 class="text-2xl font-bold mt-2">Card Components</h3>
+              <p class="text-gray-600 mt-2">
+                Reusable profile and product card examples.
+              </p>
+            </div>
+
+            <!-- Roxane's card components will be integrated here -->
+            <div class="bg-gray-50 border border-dashed border-gray-300 rounded-lg p-8 text-center">
+              <p class="font-semibold text-gray-700">
+                Card components coming soon
+              </p>
+              <p class="text-sm text-gray-500 mt-2">
+                Integration area for Roxane's work.
+              </p>
+            </div>
+          </section>
+
+          <!-- Alerts Integration Area -->
+          <section id="alerts" class="bg-white p-8 md:p-10 rounded-xl border border-gray-200 shadow-sm">
+            <div class="mb-6">
+              <span class="text-sm font-semibold text-yellow-700">03 / ALERTS</span>
+              <h3 class="text-2xl font-bold mt-2">Alert Components</h3>
+              <p class="text-gray-600 mt-2">
+                Success, warning, error and information alert messages.
+              </p>
+            </div>
+
+            <!-- Roxane's alert components will be integrated here -->
+            <div class="bg-gray-50 border border-dashed border-gray-300 rounded-lg p-8 text-center">
+              <p class="font-semibold text-gray-700">
+                Alert components coming soon
+              </p>
+              <p class="text-sm text-gray-500 mt-2">
+                Integration area for Roxane's work.
+              </p>
+            </div>
+          </section>
+
+        </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-16 text-center">
-      <h2 class="text-3xl font-bold mb-4">About Our Library</h2>
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <p class="text-sm font-bold uppercase tracking-widest text-green-700 mb-3">
+        About the project
+      </p>
+
+      <h2 class="text-3xl font-bold mb-5">
+        Built for Reusability
+      </h2>
 
       <p class="text-gray-600 leading-relaxed">
         This project demonstrates how Tailwind CSS can be used to
-        create reusable and consistent UI components. Our goal is
-        to make interface development simpler and more efficient.
+        create reusable and consistent user interface components.
+        By organizing repeated styles into reusable component classes,
+        developers can build interfaces more efficiently while
+        maintaining a consistent design.
       </p>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6 px-6">
-    <p class="text-sm">
-      © 2026 Tailwind Component Library. Built with Tailwind CSS.
-    </p>
+  <footer class="bg-gray-900 text-white py-8 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-semibold">Tailwind Component Library</p>
+
+      <p class="text-sm text-gray-400 text-center">
+        Built with Tailwind CSS · 2026
+      </p>
+    </div>
   </footer>
 
 </body>
