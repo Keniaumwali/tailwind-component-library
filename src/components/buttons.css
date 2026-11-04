@@ -1,0 +1,15 @@
+
+/* Primary Button */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg bg-gray-200 px-5 py-2.5 text-sm font-semibold text-gray-800 transition-colors duration-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+/* Outline Button */
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-lg border-2 border-blue-600 bg-transparent px-5 py-2.5 text-sm font-semibold text-blue-600 transition-colors duration-200 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
